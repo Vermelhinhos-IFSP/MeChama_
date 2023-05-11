@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Favoritagem</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <div class="App" style="color: white">
+        <header class="App-header text-center" style="background-color: #CA9DF0">
+            <br><h1>Header</h1><br><br>
+        </header>
+    </div>
+
+    <br>
+
+    <div class="col-8 m-auto pt-4 pb-2 text-center">
+
+        <h1 style="color: #8352F0"><b>Usuarios Favoritados</b></h1><br>
+
+        <table class="table">
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col">Nome</th>
+              <th scope="col">Área de atuação</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!--{% for funcionario in funcionarios %}-->
+             <tr>
+              <td>{{funcionario.nome}}</td>
+              <td>{{funcionario.categoria}}</td>
+            </tr>
+            <!--{% endfor %}-->
+          </tbody>
+        </table>
+    </div>
+
+    <div class="col-8 m-auto pt-4 pb-5 text-center">
+        <a href="/" class="btn text-white" style="background-color: #8352F0">Voltar</a>
+    </div>
+</body>
+</html>
