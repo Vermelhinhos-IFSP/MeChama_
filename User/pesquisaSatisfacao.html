@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+   <style>
+    h1{
+        text-align: center; 
+        font-weight: bold !important;
+    }
+    . { font-family: sans-serif; }
+
+    li { 
+        font-size: 20px;        
+        margin-left: 10%;
+    }
+    td { 
+        font-size: 17px; 
+        margin-left: 10%;
+        font-family: sans-serif;
+    }
+
+    #likert { 
+        text-align:center; 
+        margin-left: 10%;
+    }
+    #likert td { width: 70px; }
+    
+    #submitLikert {
+        margin-left: 80% !important;
+        border: 0;
+        width: 200px;
+        height: 50px;
+        cursor: pointer;
+        background-color: #8352F0 !important;
+        color: white;
+        font-weight: bold;
+    }
+   </style>
+
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+<body>
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">MeChama</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+    </header>
+
+    <br><h1>Pesquisa de satisfação</h1><br>
+
+    <ol>
+        <li> O atendimento do funcionário foi cordial e atencioso? </li> <br>
+        <table id="likert">
+            <tr>
+                <td><input id="likertScaleStart" type="radio" name="scale" value="1" /></td>
+                <td><input type="radio" name="scale" value="2" /></td>
+                <td><input type="radio" name="scale" value="3" /></td>
+                <td><input type="radio" name="scale" value="4" /></td>
+                <td><input id="likertScaleEnd" type="radio" name="scale" value="5" /></td>
+            </tr>
+            <tr>
+                <td>-2</td>
+                <td>-1</td>
+                <td>0</td>
+                <td>1</td>
+                <td>2</td>
+            </tr>
+         </table>
+         <br><br>
+        
+        <li> Quanto ao tempo para a chegada do funcionário, o que lhe pareceu? </li> <br>
+        <table id="likert">
+            <tr>
+                <td><input id="likertScaleStart" type="radio" name="scale" value="1" /></td>
+                <td><input type="radio" name="scale" value="2" /></td>
+                <td><input type="radio" name="scale" value="3" /></td>
+                <td><input type="radio" name="scale" value="4" /></td>
+                <td><input id="likertScaleEnd" type="radio" name="scale" value="5" /></td>
+            </tr>
+            <tr>
+                <td>-2</td>
+                <td>-1</td>
+                <td>0</td>
+                <td>1</td>
+                <td>2</td>
+            </tr>
+         </table>
+         <br><br>
+
+        <li> O serviço realizado foi bem feito? </li> <br>
+        <table id="likert">
+            <tr>
+                <td><input id="likertScaleStart" type="radio" name="scale" value="1" /></td>
+                <td><input type="radio" name="scale" value="2" /></td>
+                <td><input type="radio" name="scale" value="3" /></td>
+                <td><input type="radio" name="scale" value="4" /></td>
+                <td><input id="likertScaleEnd" type="radio" name="scale" value="5" /></td>
+            </tr>
+            <tr>
+                <td>-2</td>
+                <td>-1</td>
+                <td>0</td>
+                <td>1</td>
+                <td>2</td>
+            </tr>
+         </table>
+         <br><br>
+    </ol>
+
+    <button id="submitLikert" type="submit" form="form1" value="Submit">Submeter pesquisa</button>
+</body>
+</html>
