@@ -62,6 +62,10 @@
       opacity: 0;
       pointer-events: none;
   }
+
+  textarea {
+    margin-left: 198px;
+  }
   </style>
 
 </head>
@@ -136,7 +140,31 @@
             </tr>
          </table>
          <br><br>
+
+        <li id="list"> Avaliação geral de serviço </li> <br>
+        <table id="likert">
+            <tr>
+            <td id="likert"><input type="radio" value="1" name="knowledgeable"/></td>
+            <td id="likert"><input type="radio" value="2" name="knowledgeable"/></td>
+            <td id="likert"><input type="radio" value="3" name="knowledgeable"/></td>
+            <td id="likert"><input type="radio" value="4" name="knowledgeable"/></td>
+            <td id="likert"><input type="radio" value="5" name="knowledgeable"/></td>
+            </tr>
+            <tr>
+                <td>-2</td>
+                <td>-1</td>
+                <td>0</td>
+                <td>1</td>
+                <td>2</td>
+            </tr>
+         </table>
+         <br><br>
+
+         <li id="list"> Avaliação geral de serviço </li> <br>
+         <textarea placeholder="Digite sua mensagem" minlength=10 maxlength=200 rows=5></textarea>
+         <br><br>
     </ol>
-    <button id="submitLikert" type="submit" form="form1" value="Submit">Submeter pesquisa</button><br>
+
+    <a href="pesquisaSatisfacaoFeedback.html"><button id="submitLikert" type="submit" form="form1" value="Submit">Submeter pesquisa</button></a><br><br><br><br><br>
 </body>
 </html>
