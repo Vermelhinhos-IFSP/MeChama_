@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="/Home/style.css">
+    <title>Cadastre-se agora!</title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <a href="Home\index.html" class="logo">MeChama</a>
+        <ul>
+            <li><a href="Home\index.html">Home</a></li>
+            <li><a href="Pesquisa\filtro.html">Pesquisa</a></li>
+            <li><a href="#">Empresa</a></li>
+            <li><a href="#">Perfil</a></li>
+        </ul>  
+    </header> <br><br><br><br><br>
+
+    <div class="main">
+
+        <!-- Sign up form -->
+        <section class="signup">
+            <div class="container">
+                <div class="signup-content">
+                    <div class="signup-form">
+                        <h2 class="form-title"></h2>
+                        <form method="POST" class="register-form" id="register-form">
+                            <div class="form-group">
+                                <h2 class="form-title">Cadastro</h2>
+                                <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <input type="text" name="name" id="name" placeholder="Nome"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="CPF"><i class="zmdi zmdi-email"></i></label>
+                                <input type="number" name="CPF" id="CPF" placeholder="CPF"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="cpf"><i class="zmdi zmdi-email"></i></label>
+                                <input type="text" name="tel" maxlength="12" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="Telefone"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="email"><i class="zmdi zmdi-email"></i></label>
+                                <input type="email" name="email" id="email" placeholder="Email"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="logradouro"><i class="zmdi zmdi-email"></i></label>
+                                <input type="text" name="logradouro" id="logradouro" placeholder="Logradouro"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="senha"><i class="zmdi zmdi-lock"></i></label>
+                                <input type="password" name="senha" id="senha" placeholder="Senha"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="confirmar_senha"><i class="zmdi zmdi-lock-outline"></i></label>
+                                <input type="password" name="confirmar_senha" id="confirmar_senha" placeholder="Repita sua senha"/>
+                            </div>
+                            <div class="form-group form-button">
+                                <input type="submit" name="signup" id="signup" class="form-submit" value="Cadastrar-se"/>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="signup-image">
+                        <figure><img src="imagens/signup-image.jpg" alt="sing up image"></figure>
+                        <a href="User/loginEntrar.html" class="signup-image-link">Eu já tenho uma conta</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
