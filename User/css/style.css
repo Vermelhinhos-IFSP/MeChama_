@@ -1,3 +1,50 @@
+header
+{
+  background: linear-gradient(#b67edf, #ffff); 
+  position:absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10000;
+}
+header .logo
+{
+  color: #ffff;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+header ul
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header ul li
+{
+  list-style: none;
+  margin-left: 20px;
+}
+header ul li a
+{
+  text-decoration: none;
+  padding: 6px 15px;
+  color: #ffff;
+  border-radius: 20px;
+}
+header ul li a:hover,
+header ul li a.active
+{
+  background: #ffff;
+  color: #b67edf!important;
+}
+
 *{
   font-family: 'Poppins', sans-serif!important;
 }
@@ -130,7 +177,7 @@ a:focus, a:active {
   -o-transition: all 300ms ease 0s;
   -ms-transition: all 300ms ease 0s; }
 
-input, select, textarea {
+input, select, textarea{
   outline: none;
   appearance: unset !important;
   -moz-appearance: unset !important;
@@ -260,17 +307,16 @@ body {
   padding: 75px 0; }
 
 .signup-form, .signup-image, .signin-form, .signin-image {
-  width: 50%;
+  width: auto;
   overflow: hidden; }
 
 .signup-image {
-  margin: 0 55px; }
+  margin: 0 55px;
+  margin-top: 150px; 
+}
 
 .form-title {
   margin-bottom: 33px; }
-
-.signup-image {
-  margin-top: 45px; }
 
 figure {
   margin-bottom: 50px;
@@ -297,6 +343,7 @@ figure {
   margin-top: 16px; }
 
 .signup-image-link {
+  margin-left: 2px;
   font-size: 14px;
   color: #222;
   display: block;
@@ -515,9 +562,16 @@ label.valid {
   margin-left: 80px; }
 
 .signin-image {
-  margin-left: 110px;
-  margin-right: 20px;
-  margin-top: 10px; }
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 50px;
+  order: 3;
+  -moz-order: 3;
+  -webkit-order: 3;
+  -o-order: 3;
+  -ms-order: 3; 
+  width: auto;
+}
 
 @media screen and (max-width: 1200px) {
   .container {
@@ -545,16 +599,6 @@ label.valid {
     padding-left: 0px;
     /* box-sizing: border-box; */
     padding: 0 30px; }
-
-  .signin-image {
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-top: 50px;
-    order: 2;
-    -moz-order: 2;
-    -webkit-order: 2;
-    -o-order: 2;
-    -ms-order: 2; }
 
   .signup-form, .signup-image, .signin-form, .signin-image {
     width: auto; }
